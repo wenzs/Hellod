@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wenzs.jokeintefacetest.JokeActivity"
+    android:orientation="vertical">
+
+   <EditText
+       android:id="@+id/date"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="yyyy-mm-dd"/>
+    <EditText
+        android:id="@+id/page_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="按页数搜索"/>
+    <Button
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="搜索"
+        android:onClick="onClick"/>
+    <ListView
+        android:id="@+id/Joke_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+</LinearLayout>
